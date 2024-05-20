@@ -16,7 +16,8 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
-    { "catppuccin/nvim", name = "catppuccin", priority = 1000 }
+    { "catppuccin/nvim", name = "catppuccin", priority = 1000, lazy=true }
 })
 
 vim.cmd.colorscheme "catppuccin-mocha"
+

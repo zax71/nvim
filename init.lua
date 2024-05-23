@@ -15,20 +15,9 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
-require("lazy").setup({
-    {
-        "catppuccin/nvim",
-        name = "catppuccin",
-        priority = 1000,
-        lazy=true
-    },
-    {
-        'nvim-lualine/lualine.nvim',
-        dependencies = { 'nvim-tree/nvim-web-devicons' }
-    }
-})
+require("lazy").setup("plugins")
 
 vim.cmd.colorscheme "catppuccin-mocha"
 
 -- Custom line
-require('lualine').setup()
+ require('lualine').setup()

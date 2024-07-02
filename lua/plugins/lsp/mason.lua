@@ -1,7 +1,7 @@
 return {
-    "williamboman/mason-lspconfig.nvim",
+	"williamboman/mason-lspconfig.nvim",
 	dependencies = {
-        "williamboman/mason.nvim",
+		"williamboman/mason.nvim",
 		"WhoIsSethDaniel/mason-tool-installer.nvim",
 	},
 	config = function()
@@ -30,23 +30,31 @@ return {
 			ensure_installed = {
 				"typos_lsp", -- Generic spell check
 				"neocmake", -- Makefile
-				"tsserver", -- .ts
-				"html", -- .html
-				"cssls", -- .css
-				"tailwindcss", -- .css
-				"svelte", -- .svelte
-				"lua_ls", -- .lua
+				"tsserver", -- Typescript
+				"html", -- HTML
+				"cssls", -- CSS
+				"tailwindcss", -- CSS
+				"svelte", -- Svelte
+				"lua_ls", -- Lua
 				"emmet_ls", -- HTML esque
-				"pyright", -- .py
+				"pyright", -- Python
+				"rust_analyzer", -- Rust
+				"gopls", -- Go
 			},
 		})
 
 		mason_tool_installer.setup({
 			ensure_installed = {
-				"prettier", -- js
-				"stylua", -- lua
-				"isort", -- python
-				"black", -- python
+				"prettier", -- JS formatter
+				"stylua", -- Lua formatter
+				"isort", -- Python formatter
+				"black", -- Python formatter
+				"gofumpt", -- Go formatter
+
+				"pylint", -- Python linter
+				"eslint_d", -- JS linter
+				"luacheck", -- Lua linter
+				"golangci-lint", -- Go linter
 			},
 			auto_update = true,
 		})

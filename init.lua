@@ -25,4 +25,4 @@ require("lazy").setup({
 vim.cmd.colorscheme "catppuccin-mocha"
 
 -- Custom line
- require('lualine').setup()
+require('lualine').setup()

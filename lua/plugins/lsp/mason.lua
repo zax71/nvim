@@ -50,6 +50,7 @@ return {
 				"isort", -- Python formatter
 				"black", -- Python formatter
 				"gofumpt", -- Go formatter
+				"taplo", -- TOML Formatter
 
 				"pylint", -- Python linter
 				"eslint_d", -- JS linter

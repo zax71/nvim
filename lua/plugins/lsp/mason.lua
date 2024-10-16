@@ -40,6 +40,7 @@ return {
 				"pyright", -- Python
 				"rust_analyzer", -- Rust
 				"gopls", -- Go
+				"texlab", -- LaTeX
 			},
 		})
 

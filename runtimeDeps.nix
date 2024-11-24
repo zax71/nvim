@@ -8,6 +8,7 @@ with pkgs; [
     mypy # Python
     rust-analyzer # Rust
     gopls # Go
+    slint-lsp
 
 #  -- Formatters --
 

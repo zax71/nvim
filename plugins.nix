@@ -49,6 +49,7 @@ with pkgs.vimPlugins; [
             p.markdown
             p.markdown_inline
             p.regex
+            p.slint
         ]
     ))
 

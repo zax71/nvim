@@ -1,10 +1,4 @@
-return {
-	"stevearc/conform.nvim",
-	event = { "BufReadPre", "BufNewFile" },
-	config = function()
-		local conform = require("conform")
-
-		conform.setup({
+require("conform").setup({
 			formatters_by_ft = {
 				javascript = { { "prettierd", "prettier" } },
 				typescript = { { "prettierd", "prettier" } },
@@ -31,5 +25,3 @@ return {
 				timeout = 500,
 			},
 		})
-	end,
-}

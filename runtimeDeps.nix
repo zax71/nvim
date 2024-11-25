@@ -4,6 +4,7 @@ with pkgs;
   #   -- Plugin deps --
 
   fd
+  xclip
 
   #      -- LSP --
 

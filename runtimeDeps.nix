@@ -1,6 +1,10 @@
 { pkgs }:
 with pkgs; [
-#    -- LSP --
+#   -- Plugin deps --
+    
+    fd
+
+#      -- LSP --
 
     typos-lsp # Spell check
     neocmakelsp # Cmake
@@ -10,7 +14,7 @@ with pkgs; [
     gopls # Go
     slint-lsp
 
-#  -- Formatters --
+#   -- Formatters --
 
     stylua # Lua
     isort # Python
@@ -19,7 +23,7 @@ with pkgs; [
     taplo # TOML
     rustfmt # Rust
 
-#   -- Linters --
+#    -- Linters --
     pylint
     luajitPackages.luacheck
     golangci-lint

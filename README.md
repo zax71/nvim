@@ -1,3 +1,6 @@
+# ⚠ Archived ⚠
+This has been archived in favour of a new Lazy.nvim based config, inspired by [Kidsan](https://github.com/Kidsan/nixos-config/blob/main/home/programs/neovim/default.nix) that now resides [in my main NixOS config](https://github.com/zax71/NixOS/tree/main/home-manager/programs/neovim).
+
 # Neovim Config
 
 This is a custom neovim config packaged in a [NixOS Flakes](https://wiki.nixos.org/wiki/Flakes). This was mostly based off [PrimaMaterina's excellent guide](https://primamateria.github.io/blog/neovim-nix/) regarding the subject.
